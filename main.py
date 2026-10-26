@@ -31,8 +31,8 @@ def result_checker(event):
     first_name = document.getElementById("first_name").value.strip().title()
     last_name = document.getElementById("last_name").value.strip().title()
 
-    # Combine the first and last names using an f-string.
-    full_name = f"{first_name} {last_name}".strip()
+    # Combine the first and last names using concatenation
+    full_name = first_name + ' ' + last_name
 
     # When the name is finalized, create a set
     new_member = {full_name}
